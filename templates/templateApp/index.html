@@ -1,0 +1,38 @@
+{% extends "templateApp/base.html" %}
+
+{% block content %}
+
+<div class="text-center py-5">
+    <h1 class="display-4 fw-bold">
+        Welcome to Our Django Website 🚀
+    </h1>
+
+    <p class="lead text-muted">
+        Your journey into powerful web development starts here.
+    </p>
+
+    <a href="{% url 'about' %}" class="btn btn-success btn-lg mt-3">
+        Learn More About Us
+    </a>
+</div>
+
+<hr>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <h4>⚡ Fast Development</h4>
+        <p>Django helps build secure and scalable applications quickly.</p>
+    </div>
+
+    <div class="col-md-4">
+        <h4>🔒 Secure by Default</h4>
+        <p>Protection against common threats like SQL Injection and XSS.</p>
+    </div>
+
+    <div class="col-md-4">
+        <h4>📦 Powerful Backend</h4>
+        <p>Admin panel, ORM, authentication and more.</p>
+    </div>
+</div>
+
+{% endblock %}

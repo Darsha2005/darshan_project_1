@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bio Data Result</title>
+</head>
+<body style="font-family:Arial; padding:40px;">
+
+    <h2>Bio Data Submitted Successfully</h2>
+
+    <p><b>Name:</b> {{ name }}</p>
+    <p><b>DOB:</b> {{ dob }}</p>
+    <p><b>Gender:</b> {{ gender }}</p>
+    <p><b>Email:</b> {{ email }}</p>
+    <p><b>Phone:</b> {{ phone }}</p>
+    <p><b>Address:</b> {{ address }}</p>
+    <p><b>Qualification:</b> {{ qualification }}</p>
+    <p><b>Skills:</b> {{ skills }}</p>
+
+    <br>
+
+    <a href="{% url 'Biodata' %}">
+        <button style="padding:10px 20px;">Back to Form</button>
+    </a>
+
+</body>
+</html>

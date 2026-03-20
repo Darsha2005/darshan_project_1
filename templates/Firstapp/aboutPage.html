@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{person}}</title>
+    <style>
+        p{
+        color:blue;
+        font-size:30px;
+    </style>
+    <link rel="stylesheet" href="{% static 'style.css'  %">
+</head>
+<body style="background-color:lightgreen;">
+    <p>Name: {{name}}</p>
+    <p>Age:{{age}}</p>
+    <p>City:{{city}}</p>
+    <p>Gender:{{gender}}</p>
+    <p>Hobby:{{hobby}}</p>
+    <p>Profession:{{profession}}</p>
+    <img src="{% static 'car_image.jpg' %}" alt="Car Image">
+</body>
+</html>
